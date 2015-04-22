@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "coffee-script": "^1.9.2",
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "twit": "^1.1.20"
   }
 }
