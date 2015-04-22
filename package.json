@@ -1,0 +1,15 @@
+{
+  "name": "avatar-updater",
+  "version": "0.0.1",
+  "description": "update social profile avatars",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node ."
+  },
+  "author": "Duncan Beaton",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "^1.9.2",
+    "express": "^4.12.3"
+  }
+}
