@@ -4,6 +4,8 @@ path = require "path"
 hbs = require "hbs"
 bodyParser = require "body-parser"
 Twit = require "twit"
+cheerio = require "cheerio"
+request = require "request"
 Constants = require "./private/constants"
 
 T = new Twit(Constants.Twitter)
@@ -23,5 +25,20 @@ app.post "/avatar", (req, res) ->
     res.write("Response: #{JSON.stringify(data)}")
     res.end()
 
-app.post "/bg", (req, res) ->
+app.get "/bg", (req, res) ->
   url = "http://colorfulgradients.tumblr.com/random"
+  request url, (err, res, html) ->
+    $ = cheerio.load(html)
+    $(".photo-wrapper img").each ->
+      imgUrl = $(this).attr("src")
+      console.log imgUrl
+      request { url: imgUrl, encoding: null}, (err, res, body) ->
+        b64 = new Buffer(body).toString("base64")
+        T.post "account/update_profile_banner", banner: b64, (err, data) ->
+          console.log err, data
+          #res.setHeader("Content-Type", "text/plain")
+          #res.write("Error: #{JSON.stringify(err)}")
+          #res.write("Response: #{JSON.stringify(data)}")
+          #res.end()
+
+
