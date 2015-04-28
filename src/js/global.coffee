@@ -19,12 +19,10 @@ $ ->
     drawGlitchedImageData = (imgData) ->
       ctx.putImageData(imgData, 0, 0)
       b64 = canvas.toDataURL()
-      #upload(b64)
+      upload(b64)
     glitch(imgData, params, drawGlitchedImageData)
 
   img.src="images/profile.jpg"
-
-  bg()
 
 upload = (data) ->
   params =
@@ -37,6 +35,7 @@ upload = (data) ->
     data: JSON.stringify(params)
   ).done (data) ->
     console.log "saved #{data}"
+    bg()
 
 bg = ->
   $.get "/bg", (data) ->
