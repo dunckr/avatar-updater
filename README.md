@@ -1,6 +1,6 @@
 # avatar updater
 
-Glitch twitter profile using [Glitch.js](http://sjhewitt.github.io/glitch.js/).
+refresh my twitter bg
 
 #### Install
 
@@ -8,7 +8,7 @@ Glitch twitter profile using [Glitch.js](http://sjhewitt.github.io/glitch.js/).
 
 #### Run
 
-`node . && gulp`
+`node start`
 
 #### Env vars
 
@@ -16,14 +16,6 @@ Glitch twitter profile using [Glitch.js](http://sjhewitt.github.io/glitch.js/).
 * TWITTER_CONSUMER_SECRET
 * TWITTER_ACCESS_TOKEN
 * TWITTER_ACCESS_TOKEN_SECRET
-
-### Build
-
-`gulp production`
-
-### Deploy
-
-`git push heroku master`
 
 ## License
 
