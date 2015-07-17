@@ -1,56 +1,18 @@
 {
   "name": "avatar-updater",
-  "version": "0.0.1",
-  "description": "update social profile avatars",
+  "version": "0.0.2",
+  "description": "update social profile avatar",
   "main": "index.js",
   "scripts": {
-    "watch": "node .",
-    "dev": "gulp",
-    "production": "gulp production"
-  },
-  "browserify": {
-    "transform": [
-      "coffeeify"
-    ]
+    "start": "node ."
   },
   "author": "Duncan Beaton",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.12.3",
     "cheerio": "^0.19.0",
     "coffee-script": "^1.9.2",
     "express": "^4.12.3",
-    "hbs": "^3.0.1",
-    "normalize-sass": "^1.0.0",
     "request": "^2.55.0",
     "twit": "^1.1.20"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.6.5",
-    "browserify": "^8.0.2",
-    "browserify-shim": "^3.8.2",
-    "coffeeify": "^1.0.0",
-    "gulp": "^3.8.7",
-    "gulp-autoprefixer": "^2.0.0",
-    "gulp-changed": "^0.4.1",
-    "gulp-data": "^1.2.0",
-    "gulp-filesize": "0.0.6",
-    "gulp-iconfont": "^1.0.0",
-    "gulp-imagemin": "^2.2.0",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-notify": "^1.4.2",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "~1.3.1",
-    "gulp-sourcemaps": "^1.2.8",
-    "gulp-swig": "^0.7.4",
-    "gulp-uglify": "^1.0.2",
-    "gulp-util": "^3.0.0",
-    "lodash": "^2.4.1",
-    "node-bourbon": "^4.2.1-beta1",
-    "node-neat": "^1.7.1-beta1",
-    "pretty-hrtime": "~0.2.1",
-    "require-dir": "^0.1.0",
-    "vinyl-source-stream": "~0.1.1",
-    "watchify": "^2.2.1"
   }
 }
