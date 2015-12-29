@@ -1,6 +1,8 @@
-# avatar updater
+# Twitter Background Updater
 
-refresh my twitter bg
+Update Twitter banner background using [Will Burn’s](http://willburnswebsite.com/) [Colorfulgradients](http://colorfulgradients.tumblr.com).
+
+![Examples](https://raw.githubusercontent.com/dunckr/avatar-updater/master/examples.jpg)
 
 #### Install
 
@@ -8,9 +10,9 @@ refresh my twitter bg
 
 #### Run
 
-`node start`
+`npm start`
 
-#### Env vars
+#### ENV Variables
 
 * TWITTER_CONSUMER_KEY
 * TWITTER_CONSUMER_SECRET

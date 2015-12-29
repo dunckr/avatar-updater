@@ -1,6 +1,6 @@
 {
   "name": "avatar-updater",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "update social profile avatar",
   "main": "index.js",
   "scripts": {
