@@ -1,4 +1,4 @@
-# Twitter Background Updater
+# Twitter Background Refresh
 
 Update Twitter banner background using [Will Burn’s](http://willburnswebsite.com/) [Colorfulgradients](http://colorfulgradients.tumblr.com).
 

@@ -1,7 +1,7 @@
 {
-  "name": "avatar-updater",
-  "version": "1.0.0",
-  "description": "update social profile avatar",
+  "name": "twitter-background-refresh",
+  "version": "1.0.1",
+  "description": "Update Twitter banner background using Will Burn’s] Colorfulgradients",
   "main": "index.js",
   "scripts": {
     "start": "node ."
