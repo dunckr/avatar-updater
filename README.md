@@ -2,7 +2,7 @@
 
 Update Twitter banner background using [Will Burn’s](http://willburnswebsite.com/) [Colorfulgradients](http://colorfulgradients.tumblr.com).
 
-![Examples](https://raw.githubusercontent.com/dunckr/avatar-updater/master/examples.jpg)
+![Examples](https://raw.githubusercontent.com/dunckr/twitter-background-refresh/master/examples.jpg)
 
 #### Install
 
